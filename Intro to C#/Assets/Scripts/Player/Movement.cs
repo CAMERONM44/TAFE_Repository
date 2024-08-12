@@ -54,6 +54,7 @@ namespace Player
                     }
 
                     _moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+                    _moveDirection = transform.TransformDirection(_moveDirection);
                     _moveDirection *= _moveSpeed;
 
                     if (Input.GetButton("Jump"))
