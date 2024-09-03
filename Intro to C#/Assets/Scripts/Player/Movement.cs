@@ -31,7 +31,7 @@ namespace Player
             _moveSpeed = _walk;
             this.enabled = true;
         }
-        private void Update()
+        private void MovePlayer()
         {
             if( _characterController != null ) 
             {
@@ -65,6 +65,13 @@ namespace Player
                 _moveDirection.y -= _gravity * Time.deltaTime;
                 _characterController.Move( _moveDirection * Time.deltaTime);
             }   
+        }
+        private void Update()
+        {
+            if (GameManager.instance.currentGameState == GameState.Game)
+            {
+                MovePlayer();
+            }
         }
         #endregion
     }

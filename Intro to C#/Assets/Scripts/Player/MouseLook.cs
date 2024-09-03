@@ -27,12 +27,7 @@ namespace Player
         // Start is called before the first frame update
         void Start()
         {
-            #region Should have this in GameManager
-            //Lock the cursor to the middle of the screen
-            Cursor.lockState = CursorLockMode.Locked;
-            //Hide the cursor from view
-            Cursor.visible = false;
-            #endregion
+
             //If our gameobject has a rigid body attached to it
             if (GetComponent<Rigidbody>())
             {
@@ -49,7 +44,7 @@ namespace Player
         }
 
         // Update is called once per frame
-        void Update()
+        void Look()
         {
             #region Mouse Movement X axis
             //If the rotational axis is mouse x
@@ -82,6 +77,13 @@ namespace Player
                 }
             }
             #endregion
+        }
+        private void Update()
+        {
+            if (GameManager.instance.currentGameState == GameState.Game)
+            {
+                Look();
+            }
         }
     }
 }
