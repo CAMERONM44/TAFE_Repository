@@ -22,17 +22,22 @@ public class PlayerController : MonoBehaviour
 {
     [Tooltip("Toggle on to print console messages from this component.")]
     [SerializeField] private bool debug;
+
     [Header("Movement Properties")]
     [Tooltip("Defines the default speed at which the player will move.")]
     [Range(1f, 10f)][SerializeField] private float defaultSpeed;
+
     [Header("Physics Properties")]
     [Tooltip("Defines how strong gravity is.")]
     [Range(1f, 100f)][SerializeField] private float gravity;
+
     [Header("Jumping Properties")]
     [Tooltip("Disables the ability for the player to jump when toggled to true.")]
     [SerializeField] private bool disableJump = false;
+
     [Tooltip("Defines the force at which the player will jump.")]
     [Range(0f, 30f)][SerializeField] private float jumpForce;
+
     [Tooltip("The audio clips for jumping. (Will be randomly selected from.)")]
     [SerializeField] private AudioClip[] jumpClips;
 
