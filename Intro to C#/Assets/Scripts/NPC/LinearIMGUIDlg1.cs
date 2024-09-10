@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace NPC
 {
-    public class LinearIMGUIDlg : MonoBehaviour
+    public class LinearIMGUIDlg : MonoBehaviour, IInteractable
     {
         public string[] linesOfDlg;
         public int lineIndex;
@@ -21,6 +21,12 @@ namespace NPC
             Dlg();
 
         }
+        public void OnInteraction()
+        {
+            showDlg = true;
+            GameManager.instance.ChangeGameState(GameState.Menu);
+        }
+
         void Dlg()
         {
             if (showDlg)
@@ -42,6 +48,7 @@ namespace NPC
                     {
                         showDlg = false;
                         lineIndex = 0;
+                        GameManager.instance.ChangeGameState(GameState.Game);
                     }
                 }
             }
