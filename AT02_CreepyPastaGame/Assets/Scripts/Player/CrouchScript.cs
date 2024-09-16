@@ -26,7 +26,7 @@ public class CrouchScript : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.LeftControl))
         {
             transform.localScale = playerScale;
-            transform.position = new Vector3(transform.position.x, transform.position.y + 0.8f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y + 2, transform.position.z);
         }
     }
 }
