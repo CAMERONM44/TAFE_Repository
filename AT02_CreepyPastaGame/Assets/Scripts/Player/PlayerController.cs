@@ -20,6 +20,16 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController), typeof(AudioSource))]
 public class PlayerController : MonoBehaviour
 {
+    [Header("Layer Mask")]
+    [Tooltip("Layer Mask for sphere/raycasts. Assign the Player object to a Layer, then Ignore that layer here.")]
+    public LayerMask castingMask;                              // Layer mask for casts. You'll want to ignore the player.
+
+    public float ceilingCheckY = 1.83f;
+    public float sphereCastRadius = 0.25f;
+    public bool isCeiling = false;
+    private float ceilingOffsetY = 0;
+    private Transform playerTx;
+
     [Tooltip("Toggle on to print console messages from this component.")]
     [SerializeField] private bool debug;
 
@@ -116,6 +126,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         currentMovementSpeed = defaultSpeed;
+        ceilingOffsetY = ceilingCheckY;
     }
 
     /// <summary>
@@ -150,6 +161,26 @@ public class PlayerController : MonoBehaviour
         {
             ApplyMovementTick(true);
         }
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+
+        {
+            controller.height = controller.height / 3;
+            currentMovementSpeed = currentMovementSpeed / 3;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y + 0.7f, transform.position.z);
+            controller.height = controller.height * 3f;
+            currentMovementSpeed = currentMovementSpeed * 3;
+        }
+        CeilingCheck();
+
+    }
+    void CeilingCheck()
+    {
+        Vector3 origin = new Vector3(playerTx.position.x, playerTx.position.y + ceilingOffsetY, playerTx.position.z);
+
+        isCeiling = Physics.CheckSphere(origin, sphereCastRadius, castingMask);
     }
 
     /// <summary>

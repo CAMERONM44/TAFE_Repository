@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CrouchScript : MonoBehaviour
 {
-    private Vector3 crouchScale = new Vector3(0.5f, 0.4f, 0.5f);
-    private Vector3 playerScale = new Vector3(0.5f, 1f, 0.5f);
+    private CharacterController controller;
+    //private Vector3 crouchScale = new Vector3(0.5f, 0.4f, 0.5f);
+    //private Vector3 playerScale = new Vector3(0.5f, 1f, 0.5f);
 
     // Start is called before the first frame update
     void Start()
@@ -19,14 +20,15 @@ public class CrouchScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftControl))
 
         {
-            transform.localScale = crouchScale;
-            transform.position = new Vector3(transform.position.x, transform.position.y - 0.0f, transform.position.z);
+            controller.height = controller.height/2;
+
+            //transform.position = new Vector3(transform.position.x, transform.position.y - 0.0f, transform.position.z);
         }
 
         if (Input.GetKeyUp(KeyCode.LeftControl))
         {
-            transform.localScale = playerScale;
-            transform.position = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+            controller.height = controller.height * 2;
+            //transform.position = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
         }
     }
 }
