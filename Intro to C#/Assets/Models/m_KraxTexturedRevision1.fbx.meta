@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 897574c4b42b6824fa8323e3412b8cc1
+guid: 1c187d709a7866b40a491a0b06cbe154
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,22 +8,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material
-    second: {fileID: 2100000, guid: 6983a0d40fde67344846e35f79640556, type: 2}
+    second: {fileID: 2100000, guid: 8edbcd0cd38fef64aaac07f1ea4a00d1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.001
-    second: {fileID: 2100000, guid: 33180341a0a7f5346961ea59868040cf, type: 2}
+    second: {fileID: 2100000, guid: 6356c91028ac41c42989472a895e1efd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.002
-    second: {fileID: 2100000, guid: 393ecfe45c7469c428c9d2c8179f7a21, type: 2}
+    second: {fileID: 2100000, guid: bafc30858ae91ff4c8faf97d03658c6e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.003
-    second: {fileID: 2100000, guid: f2e4c818d35577942baa2840a0647eb5, type: 2}
+    second: {fileID: 2100000, guid: 829fe0f02379a3a4b8365d202bcd9b10, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -33,27 +33,27 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: tex_ArmsUpper
-    second: {fileID: 2800000, guid: 05780eb0b8a6bf94abe7304c43263813, type: 3}
+    second: {fileID: 2800000, guid: 1918795474a8f93458306e18310f64ac, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: tex_Feet
-    second: {fileID: 2800000, guid: dbe41097abf1f7d46ab3ed972bbaa18d, type: 3}
+    second: {fileID: 2800000, guid: 5bb8e63e18e9e4749861ef5e35a88e87, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: tex_HeadEyes
-    second: {fileID: 2800000, guid: b26b7548094cf2e4d81baa433da06afc, type: 3}
+    second: {fileID: 2800000, guid: 9fdd92e75da30664ea478a85f664ac9c, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: tex_Legs
-    second: {fileID: 2800000, guid: 8718c1793b1fdc54186345da8bafb2bf, type: 3}
+    second: {fileID: 2800000, guid: 50b4946ef7dc50d4a993ba9053222896, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: tex_Torso
-    second: {fileID: 2800000, guid: 37f3a9b1c1d4af54bb598846bbbf319a, type: 3}
+    second: {fileID: 2800000, guid: 5d3b080c93a6d10409fcbeb580a7f751, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
