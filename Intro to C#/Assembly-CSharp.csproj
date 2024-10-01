@@ -61,8 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\Movement.cs" />
+    <Compile Include="Assets\Scripts\NPC\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\NPC\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\NPC\IMGUI\LinearIMGUIDlg1.cs" />
     <Compile Include="Assets\Scripts\Player\Interact.cs" />
-    <Compile Include="Assets\Scripts\NPC\LinearIMGUIDlg1.cs" />
     <Compile Include="Assets\Scripts\Interfaces\Interactable.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Example.cs" />
