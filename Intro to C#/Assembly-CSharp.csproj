@@ -64,13 +64,18 @@
     <Compile Include="Assets\Scripts\Menu\Scene Change.cs" />
     <Compile Include="Assets\Scripts\NPC\Dialogue.cs" />
     <Compile Include="Assets\Scripts\NPC\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\Menu\Quality.cs" />
     <Compile Include="Assets\Scripts\NPC\IMGUI\LinearIMGUIDlg1.cs" />
     <Compile Include="Assets\Scripts\Player\Interact.cs" />
+    <Compile Include="Assets\Scripts\Menu\MouseSettings.cs" />
     <Compile Include="Assets\Scripts\Interfaces\Interactable.cs" />
+    <Compile Include="Assets\Scripts\Menu\KeyBinds.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Menu\ExitGame.cs" />
     <Compile Include="Assets\Scripts\Example.cs" />
     <Compile Include="Assets\Scripts\Player\MouseLook.cs" />
+    <Compile Include="Assets\Scripts\Menu\FullScreenAndResolution.cs" />
+    <Compile Include="Assets\Scripts\Menu\Audio.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
