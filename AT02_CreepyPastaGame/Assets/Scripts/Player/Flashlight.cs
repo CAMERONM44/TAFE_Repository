@@ -4,36 +4,23 @@ using UnityEngine;
 
 public class Flashlight : MonoBehaviour
 {
-    Light m_Light;
-    public bool drainOverTime;
-    public float maxBrightness;
-    public float minBrightness;
-    public float drainRate;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        m_Light = GetComponent<Light>();
-    }
+    public GameObject torch;
+    public Light light;
+    public bool isOn;
+    public float power = 1;
 
     // Update is called once per frame
     void Update()
     {
-        m_Light.intensity = Mathf.Clamp(m_Light.intensity, minBrightness, maxBrightness);
-        if (drainOverTime == true && m_Light.enabled == true)
+        if (isOn && power > 0)
         {
-            if (m_Light.intensity > minBrightness)
-            {
-                m_Light.intensity -= Time.deltaTime * (drainRate / 1000);
-            }
+            power -= 0.01f * Time.deltaTime;
+            light.intensity = Mathf.Clamp01(power);
         }
         if (Input.GetKeyDown(KeyCode.F))
         {
-            m_Light.enabled = !m_Light.enabled;
+            isOn = !isOn;
+            light.enabled = isOn;
         }
-    }
-    public void ReplaceBattery(float amount)
-    {
-        m_Light.intensity += amount;
     }
 }

@@ -3,7 +3,127 @@ guid: afe9bf42b84bc484290c9641507dfe08
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Button
+    second: {fileID: 2100000, guid: d4b0023750397444d860889d9a8059fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cell Floor
+    second: {fileID: 2100000, guid: 85ff7d4fda27bd8438978334c67d7440, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Computer
+    second: {fileID: 2100000, guid: c6d047ec760817d4f9a522fc35f5c184, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete Wall
+    second: {fileID: 2100000, guid: ca38c36abb37e5a42b90b5bb0a3bfd14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door Material
+    second: {fileID: 2100000, guid: bb2318674ed35084385a69802de9211c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Exit Glow
+    second: {fileID: 2100000, guid: de69d9c550cb5644583af0ce4dfc7e1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Exit Sign
+    second: {fileID: 2100000, guid: 9359baef045d16e48a77d4b16966deca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 62d0e9c67acee7f4fb6d4dd69f8ace1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: e89d848dddeba5144af61fcd165baf04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass Opaque
+    second: {fileID: 2100000, guid: 0ea625fdd62f63049abc5151988974b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light Globe
+    second: {fileID: 2100000, guid: 0efa14cd97d07834b9269f4fb189d3b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light Plastic
+    second: {fileID: 2100000, guid: 00ff1a890d58bcc4da6d8054ccf362ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 2cb38bbe3cb70044ab6a086ceea8b26d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 9b2ff9456b421ce48bf4350efcd2d1ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 40d0c774a03dcdc41a0cd678e569e5c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal Material
+    second: {fileID: 2100000, guid: 84f42a944ffb3e6458f08d9757fe8551, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Monitor Screen
+    second: {fileID: 2100000, guid: 20981c285dafb9a4f9aa9f0a6fdc3cf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Walls
+    second: {fileID: 2100000, guid: 95c302493f82d3a41a9b9133f2ed30bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wire
+    second: {fileID: 2100000, guid: 9ce9f640385e1e345bfdb6facbccea20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Desk
+    second: {fileID: 2100000, guid: b1d6285570fa38d4cbce68d79629dfc5, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Concrete Seamless Basic
+    second: {fileID: 2800000, guid: cd8d645c986c11343bdea6bf6b4d6784, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Concrete Tiles
+    second: {fileID: 2800000, guid: 528b6544b923b9343a29ac1c60b9ffed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MetalRoughness
+    second: {fileID: 2800000, guid: 25617ed355d326d4499e85f134eae8cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Walls
+    second: {fileID: 2800000, guid: 62dd5e7f175ae3c4ab0e9f6da007e896, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
