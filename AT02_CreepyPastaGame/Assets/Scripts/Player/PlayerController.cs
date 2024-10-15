@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Vent"))
         {
             controller.height = controller.height / 3;
-            currentMovementSpeed = currentMovementSpeed / 3;
+            currentMovementSpeed = currentMovementSpeed / 2;
             disableJump = true;
         }
     }
@@ -151,7 +151,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + 0.7f, transform.position.z);
             controller.height = controller.height * 3f;
-            currentMovementSpeed = currentMovementSpeed * 3;
+            currentMovementSpeed = currentMovementSpeed * 2;
             disableJump = false;
         }
     }
