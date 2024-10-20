@@ -64,7 +64,7 @@ namespace Player
                 }
                 _moveDirection.y -= _gravity * Time.deltaTime;
                 _characterController.Move( _moveDirection * Time.deltaTime);
-            }   
+            }
         }
         private void Update()
         {
