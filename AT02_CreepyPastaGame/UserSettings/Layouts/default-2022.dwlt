@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 577.6
     height: 1018.80005
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -541,9 +541,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 98610000
-    m_LastClickedID: 24984
-    m_ExpandedIDs: 00000000986100009a6100009c6100009e610000a061000000ca9a3b
+    m_SelectedIDs: 42660000
+    m_LastClickedID: 26178
+    m_ExpandedIDs: 000000005e1e00004266000044660000466600004866000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -571,7 +571,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000986100009a6100009c6100009e610000a0610000
+    m_ExpandedIDs: 000000005e1e000042660000446600004666000048660000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -713,7 +713,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d457feff1c58feff8a59feff30fbffff845b0000ec5b0000
+      m_ExpandedIDs: 40f3ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.1636848, y: -8.179424, z: -3.3953342}
+    m_Target: {x: -3.6909006, y: -17.009258, z: 1.5990255}
     speed: 2
     m_Value: {x: -2.1636848, y: -8.179424, z: -3.3953342}
   m_RenderMode: 0
@@ -1115,9 +1115,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.3485023, y: -0.35918862, z: 0.14015685, w: 0.85624766}
+    m_Target: {x: 0.3754721, y: -0.33475107, z: 0.14109823, w: 0.8545941}
     speed: 2
-    m_Value: {x: 0.34895775, y: -0.3584329, z: 0.1403606, w: 0.85443157}
+    m_Value: {x: -0.3485023, y: 0.35918862, z: -0.14015685, w: -0.8562477}
   m_Size:
     m_Target: 22.505083
     speed: 2
