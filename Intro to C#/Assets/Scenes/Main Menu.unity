@@ -880,13 +880,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 984979642}
   m_HandleRect: {fileID: 1036835332}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -80
+  m_MaxValue: 20
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267069}
+        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
+        m_MethodName: ChangeVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &177873626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,13 +1136,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 2031154470}
   m_HandleRect: {fileID: 477283436}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -80
+  m_MaxValue: 20
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.8
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267069}
+        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
+        m_MethodName: ChangeVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &204152715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,7 +1225,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 11111
 --- !u!222 &204152718
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2211,7 +2235,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 11111
 --- !u!222 &406421957
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2440,7 +2464,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 11111
 --- !u!222 &480428866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3039,7 +3063,7 @@ GameObject:
   - component: {fileID: 638038424}
   - component: {fileID: 638038423}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3108,7 +3132,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 638038424}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267067}
+        m_TargetAssemblyTypeName: Keybinds, Assembly-CSharp
+        m_MethodName: ChangeKey
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 638038421}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &638038424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3424,7 +3460,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267068}
+        m_TargetAssemblyTypeName: FullscreenAndResolution, Assembly-CSharp
+        m_MethodName: FullscreenToggle
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &730785506
 GameObject:
@@ -4085,7 +4133,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 11111
 --- !u!222 &853559751
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4682,7 +4730,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 11111
 --- !u!222 &961806826
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5348,6 +5396,11 @@ GameObject:
   - component: {fileID: 1053267063}
   - component: {fileID: 1053267062}
   - component: {fileID: 1053267064}
+  - component: {fileID: 1053267069}
+  - component: {fileID: 1053267068}
+  - component: {fileID: 1053267067}
+  - component: {fileID: 1053267066}
+  - component: {fileID: 1053267065}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -5394,6 +5447,103 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e350bab338682ca47835b92bb39c7624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1053267065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053267061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fefdcdfe87e18f64aa495eeebdb8dd18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1053267066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053267061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca73d978e0b433469842fc76ddb9ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1053267067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053267061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 287a1a7e33e294d42a9c913173068082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionMapData:
+  - actionName: Forward
+    keycodeDisplay: {fileID: 480428865}
+    defaultKey: W
+  - actionName: Backward
+    keycodeDisplay: {fileID: 1980030232}
+    defaultKey: S
+  - actionName: Left
+    keycodeDisplay: {fileID: 1766976016}
+    defaultKey: A
+  - actionName: Right
+    keycodeDisplay: {fileID: 961806825}
+    defaultKey: D
+  - actionName: Jump
+    keycodeDisplay: {fileID: 1446530523}
+    defaultKey: Space
+  - actionName: Crouch
+    keycodeDisplay: {fileID: 1974767640}
+    defaultKey: LeftControl
+  - actionName: Sprint
+    keycodeDisplay: {fileID: 204152717}
+    defaultKey: LeftShift
+  - actionName: Interact
+    keycodeDisplay: {fileID: 853559750}
+    defaultKey: E
+  - actionName: Inventory
+    keycodeDisplay: {fileID: 406421956}
+    defaultKey: Tab
+  currentSelectedKey: {fileID: 0}
+  selectedColour:
+    serializedVersion: 2
+    rgba: 3777262831
+  changedColour:
+    serializedVersion: 2
+    rgba: 3791235879
+--- !u!114 &1053267068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053267061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9d4941dddd7cf4dbe5697fbc546ab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolutionDropdown: {fileID: 265748392}
+--- !u!114 &1053267069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053267061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b9f8deb03cbb54e8149b06ccd27348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: fca08b5ba531a0d42b2ed54a31d55ac2, type: 2}
 --- !u!1 &1059695419
 GameObject:
   m_ObjectHideFlags: 0
@@ -5407,7 +5557,7 @@ GameObject:
   - component: {fileID: 1059695422}
   - component: {fileID: 1059695421}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5476,7 +5626,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1059695422}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267067}
+        m_TargetAssemblyTypeName: Keybinds, Assembly-CSharp
+        m_MethodName: ChangeKey
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1059695419}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1059695422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5528,7 +5690,7 @@ GameObject:
   - component: {fileID: 1088572627}
   - component: {fileID: 1088572626}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Interact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5597,7 +5759,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1088572627}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267067}
+        m_TargetAssemblyTypeName: Keybinds, Assembly-CSharp
+        m_MethodName: ChangeKey
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1088572624}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1088572627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5728,7 +5902,7 @@ GameObject:
   - component: {fileID: 1095603559}
   - component: {fileID: 1095603558}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Crouch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5797,7 +5971,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1095603559}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267067}
+        m_TargetAssemblyTypeName: Keybinds, Assembly-CSharp
+        m_MethodName: ChangeKey
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1095603556}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1095603559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6651,13 +6837,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 1857042183}
   m_HandleRect: {fileID: 768562246}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -80
+  m_MaxValue: 20
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267069}
+        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
+        m_MethodName: ChangeVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1389571891
 GameObject:
   m_ObjectHideFlags: 0
@@ -6746,7 +6944,7 @@ GameObject:
   - component: {fileID: 1408487267}
   - component: {fileID: 1408487266}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Forward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6815,7 +7013,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1408487267}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267067}
+        m_TargetAssemblyTypeName: Keybinds, Assembly-CSharp
+        m_MethodName: ChangeKey
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1408487264}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1408487267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7143,7 +7353,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 11111
 --- !u!222 &1446530524
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7494,7 +7704,7 @@ GameObject:
   - component: {fileID: 1524805489}
   - component: {fileID: 1524805488}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7563,7 +7773,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1524805489}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267067}
+        m_TargetAssemblyTypeName: Keybinds, Assembly-CSharp
+        m_MethodName: ChangeKey
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1524805486}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1524805489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7775,7 +7997,7 @@ GameObject:
   - component: {fileID: 1593656853}
   - component: {fileID: 1593656852}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Sprint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7844,7 +8066,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1593656853}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267067}
+        m_TargetAssemblyTypeName: Keybinds, Assembly-CSharp
+        m_MethodName: ChangeKey
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1593656850}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1593656853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8637,7 +8871,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 11111
 --- !u!222 &1766976017
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9055,7 +9289,7 @@ GameObject:
   - component: {fileID: 1838432605}
   - component: {fileID: 1838432604}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Backward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9124,7 +9358,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1838432605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267067}
+        m_TargetAssemblyTypeName: Keybinds, Assembly-CSharp
+        m_MethodName: ChangeKey
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1838432602}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1838432605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9457,7 +9703,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SFX
+  m_Text: Master
 --- !u!222 &1919766771
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9690,7 +9936,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 11111
 --- !u!222 &1974767641
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9805,7 +10051,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 11111
 --- !u!222 &1980030233
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10218,7 +10464,7 @@ GameObject:
   - component: {fileID: 2071139538}
   - component: {fileID: 2071139537}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Jump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10287,7 +10533,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2071139538}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053267067}
+        m_TargetAssemblyTypeName: Keybinds, Assembly-CSharp
+        m_MethodName: ChangeKey
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2071139535}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2071139538
 MonoBehaviour:
   m_ObjectHideFlags: 0

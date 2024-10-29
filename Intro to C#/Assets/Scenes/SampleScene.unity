@@ -1104,9 +1104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axis: 0
-  sensitivity: 15
   rotationClamp: {x: -60, y: 60}
-  invert: 0
 --- !u!114 &611880668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1498,9 +1496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axis: 0
-  sensitivity: 15
   rotationClamp: {x: -60, y: 60}
-  invert: 0
 --- !u!1 &1071465012
 GameObject:
   m_ObjectHideFlags: 0
