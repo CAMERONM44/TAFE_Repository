@@ -38,6 +38,12 @@ public class DialogueManager : MonoBehaviour
     //current line
     [SerializeField] int _currentIndex = 0;
     #endregion
+   /// <summary>
+   /// Set up the Dialogue manager when talking to a character
+   /// </summary>
+   /// <param name="lines">The lines of dialogue the character has</param>
+   /// <param name="name">The name of the character you are talking to</param>
+   /// <param name="face">The Sprite that is the character Display picture or icon</param>
     public void OnActive(string[] lines, string name, Sprite face)
     {
         _dialogueBox.SetActive(true);
@@ -51,7 +57,7 @@ public class DialogueManager : MonoBehaviour
         _name.text = name;
         _dialogueText.text = _dialogueLines[_currentIndex];
         GameManager.instance.ChangeGameState(GameState.Menu);
-    }
+    }///
     void OnDeactivate()
     {
         _dialogueBox.SetActive(false);

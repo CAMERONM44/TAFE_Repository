@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Managers the Game States and other important data
+/// </summary>
 public class GameManager : MonoBehaviour
 {
     #region Singlton
@@ -69,6 +71,9 @@ public class GameManager : MonoBehaviour
         }
     }
 }
+/// <summary>
+/// Game State that the game can be in  Game, Pause, Menu, Death
+/// </summary>
 public enum GameState
 {
     Game, Pause, Menu, Death
