@@ -1233,7 +1233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ba47030f7b7084eb88f62f227699ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torch: {fileID: 0}
   light: {fileID: 277702382}
   isOn: 1
   power: 1
@@ -5428,8 +5427,8 @@ GameObject:
   - component: {fileID: 1817517609}
   - component: {fileID: 1817517608}
   - component: {fileID: 1817517607}
-  - component: {fileID: 1817517606}
   - component: {fileID: 1817517613}
+  - component: {fileID: 1817517606}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
